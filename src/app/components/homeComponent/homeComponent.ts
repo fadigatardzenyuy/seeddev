@@ -17,20 +17,20 @@ export class HomeComponent {
   }
 
   hardware = [
-    { icon: '🖥️', name: 'Square Register', desc: 'Your side runs the business. Their side checks out fast.', price: '$899' },
-    { icon: '📱', name: 'Square Handheld', desc: 'The POS that moves with you anywhere in your space.', price: '$399' },
-    { icon: '🖨️', name: 'Square Terminal', desc: 'The all-in-one credit card machine with receipt printing.', price: '$299' },
-    { icon: '💻', name: 'Square Stand', desc: 'The intuitive, swiveling iPad point of sale.', price: '$149' },
-    { icon: '💳', name: 'Square Reader', desc: 'The portable reader for every tap, dip, and swipe.', price: '$59' },
+    { icon: '', name: 'Square Register', desc: 'Your side runs the business. Their side checks out fast.', price: '$899' },
+    { icon: '', name: 'Square Handheld', desc: 'The POS that moves with you anywhere in your space.', price: '$399' },
+    { icon: '', name: 'Square Terminal', desc: 'The all-in-one credit card machine with receipt printing.', price: '$299' },
+    { icon: '', name: 'Square Stand', desc: 'The intuitive, swiveling iPad point of sale.', price: '$149' },
+    { icon: '', name: 'Square Reader', desc: 'The portable reader for every tap, dip, and swipe.', price: '$59' },
   ];
 
   features = [
-    { icon: '💰', title: 'Take payments', desc: 'Sell anything in person and online with a POS platform that works for whatever you sell.' },
-    { icon: '👥', title: 'Manage your team', desc: 'Run payroll, schedule shifts, and take care of admin so your team can focus on performance.' },
-    { icon: '📣', title: 'Grow your customer base', desc: 'Set up marketing campaigns and loyalty programs to welcome and keep customers.' },
-    { icon: '📊', title: 'Control your cash flow', desc: 'Bring your revenue under one roof. Access funds instantly and get quicker access to loans.' },
-    { icon: '🛒', title: 'Sell online', desc: 'Build a free online store that syncs with your in-person inventory and payments automatically.' },
-    { icon: '📦', title: 'Track inventory', desc: 'Know what you have, what you need, and what sells best — all from one dashboard.' },
+    { icon: '', title: 'Take payments', desc: 'Sell anything in person and online with a POS platform that works for whatever you sell.' },
+    { icon: '', title: 'Manage your team', desc: 'Run payroll, schedule shifts, and take care of admin so your team can focus on performance.' },
+    { icon: '', title: 'Grow your customer base', desc: 'Set up marketing campaigns and loyalty programs to welcome and keep customers.' },
+    { icon: '', title: 'Control your cash flow', desc: 'Bring your revenue under one roof. Access funds instantly and get quicker access to loans.' },
+    { icon: '', title: 'Sell online', desc: 'Build a free online store that syncs with your in-person inventory and payments automatically.' },
+    { icon: '', title: 'Track inventory', desc: 'Know what you have, what you need, and what sells best — all from one dashboard.' },
   ];
 
   stats = [
@@ -41,9 +41,9 @@ export class HomeComponent {
   ];
 
   testimonials = [
-    { quote: 'Square has completely transformed how we run our café. Everything from payments to staff management is in one place.', name: 'Amara Diallo', business: 'Sunrise Café, Bamenda', initials: 'AD' },
-    { quote: 'I used to spend hours doing my books. Now Square handles it automatically and I actually understand my numbers.', name: 'Kevin Mbah', business: 'Fresh Cuts Barbershop', initials: 'KM' },
-    { quote: 'The loyalty program brought back so many customers. Our repeat visit rate went up 40% in the first month.', name: 'Sandra Fon', business: 'Glow Beauty Studio', initials: 'SF' },
+    { quote: 'Square has completely transformed how we run our café. Everything from payments to staff management is in one place.', name: 'Wazila Batinyuy ', business: 'Sunrise Café, Bamenda', initials: 'WB' },
+    { quote: 'I used to spend hours doing my books. Now Square handles it automatically and I actually understand my numbers.', name: 'Loyce Ikem ', business: 'Fresh Cuts Barbershop', initials: 'LI' },
+    { quote: 'The loyalty program brought back so many customers. Our repeat visit rate went up 40% in the first month.', name: 'Kumimyuy Fauzan', business: 'Glow Beauty Studio', initials: 'KF' },
   ];
 
   plans = [
