@@ -209,11 +209,12 @@ a {
   gap: 12px;
   flex-wrap: wrap;
   margin-bottom: 14px;
+  color: #f4f4f9;
 }
 
 .hero-note {
   font-size: 12px;
-  color: #efeff5;
+  color: #f4f4f9;
 }
 
 /* Hero dashboard visual */
