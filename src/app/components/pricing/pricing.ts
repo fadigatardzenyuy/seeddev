@@ -13,19 +13,19 @@ export class Pricing {
     {
       title: 'Basic',
       sub: 'For individuals just getting started',
-      price: '$9/mo',
+      price: 'XAF4500/mo',
       features: ['1 project', 'Basic support', '5GB storage']
     },
     {
       title: 'Pro',
       sub: 'For growing teams',
-      price: '$29/mo',
+      price: 'XAF9000/mo',
       features: ['10 projects', 'Priority support', '50GB storage', 'Team collaboration']
     },
     {
       title: 'Enterprise',
       sub: 'For large organizations',
-      price: '$99/mo',
+      price: 'XAF15000/mo',
       features: ['Unlimited projects', '24/7 support', '500GB storage', 'Advanced security', 'Dedicated manager']
     }
   ];
