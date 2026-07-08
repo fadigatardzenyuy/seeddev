@@ -1,5 +1,4 @@
 <div class="hero">
-  <!-- Logo -->
   <div class="logo-container">
     <div class="logo">
       <span class="logo-text">L</span>
@@ -7,17 +6,55 @@
     <span class="website-name">LEXON</span>
   </div>
 
-  <!-- Blue Artifacts -->
   <div class="artifact artifact-1"></div>
   <div class="artifact artifact-2"></div>
   <div class="artifact artifact-3"></div>
 
-  <!-- Hero Content -->
   <div class="hero-content">
     <h1>Comfort Without Compromise</h1>
-    <p>Thoughtfully designed clothing for everyone—whether you're navigating disability, pregnancy, or any condition that deserves better comfort solutions</p>
+    <p>Thoughtfully designed clothing for everyone—whether you're navigating disability, pregnancy, or any condition that deserves better comfort solutions.</p>
     <button class="cta-button">Explore Our Collection</button>
   </div>
 </div>
- > 
+
+<section class="home-sections">
+  <div class="section-heading">
+    <p class="eyebrow">Designed for real life</p>
+    <h2>Clothing concepts for temporary and permanent support</h2>
+    <p>Each concept is shaped around comfort, dignity, and easier dressing for different disability needs.</p>
+  </div>
+
+  <div class="cards-grid">
+    <article class="clothing-card" *ngFor="let card of clothingCards">
+      <img [src]="card.image" [alt]="card.title" />
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="pill" [class.temporary]="card.type === 'Temporary'" [class.permanent]="card.type === 'Permanent'">{{ card.type }}</span>
+          <span class="pill pill-secondary">{{ card.disability }}</span>
+        </div>
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.description }}</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="demo-section">
+  <div class="demo-copy">
+    <p class="eyebrow">Sample of a LEXON User in her suitable clothing</p>
+    <h2>LEXON REVIEW</h2>
+    <p>{{ samplePerson.story }}</p>
+    <ul>
+      <li *ngFor="let item of samplePerson.needs">{{ item }}</li>
+    </ul>
+  </div>
+
+  <div class="demo-card">
+    <div class="demo-avatar">{{ samplePerson.name.charAt(0) }}</div>
+    <h3>{{ samplePerson.name }}</h3>
+    <p class="demo-role">{{ samplePerson.role }}</p>
+    <p>{{ samplePerson.story }}</p>
+    <div class="result-box">{{ samplePerson.result }}</div>
+  </div>
+</section>
 

@@ -8,7 +8,6 @@
   overflow: hidden;
 }
 
-/* Logo Container */
 .logo-container {
   position: absolute;
   top: 30px;
@@ -53,7 +52,6 @@
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Blue Artifacts */
 .artifact {
   position: absolute;
   opacity: 0.15;
@@ -96,7 +94,6 @@
   }
 }
 
-/* Hero Content */
 .hero-content {
   position: relative;
   z-index: 10;
@@ -162,7 +159,170 @@
   transform: translateY(-1px);
 }
 
-/* Responsive Design */
+.home-sections {
+  padding: 72px 24px 32px;
+  background: #f7faff;
+}
+
+.section-heading {
+  max-width: 780px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-weight: 700;
+  color: #1b6fb8;
+  margin-bottom: 10px;
+}
+
+.section-heading h2,
+.demo-copy h2 {
+  font-size: 2.1rem;
+  margin: 0 0 12px;
+  color: #112440;
+}
+
+.section-heading p,
+.demo-copy p,
+.demo-card p {
+  color: #526177;
+  line-height: 1.7;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.clothing-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 50px rgba(17, 36, 64, 0.08);
+  border: 1px solid #e8eef8;
+}
+
+.clothing-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 20px 20px 24px;
+}
+
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #0f4c81;
+  background: #eaf4ff;
+}
+
+.pill.temporary {
+  background: #e8f6ff;
+  color: #0f5a8c;
+}
+
+.pill.permanent {
+  background: #eef7ea;
+  color: #2f8f58;
+}
+
+.pill-secondary {
+  background: #f5f7fa;
+  color: #5a6b7d;
+}
+
+.card-body h3 {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+  color: #112440;
+}
+
+.card-body p {
+  margin: 0;
+  color: #526177;
+  line-height: 1.65;
+}
+
+.demo-section {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  padding: 32px 24px 72px;
+  max-width: 1120px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.demo-copy ul {
+  padding-left: 18px;
+  color: #526177;
+  line-height: 1.8;
+}
+
+.demo-card {
+  background: linear-gradient(135deg, #112440, #1b6fb8);
+  color: white;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 18px 50px rgba(17, 36, 64, 0.15);
+}
+
+.demo-card p,
+.demo-card .result-box {
+  color: #e9f2ff;
+}
+
+.demo-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 14px;
+}
+
+.demo-role {
+  margin-top: -4px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16rem;
+  opacity: 0.9;
+}
+
+.result-box {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.16);
+  font-weight: 600;
+}
+
 @media (max-width: 768px) {
   .hero-content {
     max-width: 90%;
@@ -198,5 +358,10 @@
   .artifact-3 {
     width: 100px;
     height: 100px;
+  }
+
+  .cards-grid,
+  .demo-section {
+    grid-template-columns: 1fr;
   }
 }
