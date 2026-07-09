@@ -1,1 +1,18 @@
+<nav class="top-nav">
+  <a class="brand" routerLink="/">
+    <span class="brand-mark">L</span>
+    <span>LEXON</span>
+  </a>
+
+  <div class="nav-links">
+    <a
+      *ngFor="let item of navItems"
+      [routerLink]="item.route"
+      [class.active]="isLinkActive(item.route, item.label)"
+    >
+      {{ item.label }}
+    </a>
+  </div>
+
+</nav>
 
