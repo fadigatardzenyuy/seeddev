@@ -60,13 +60,14 @@
 
 @media (max-width: 900px) {
   .top-nav {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0.75rem;
   }
 
   .nav-links {
-    width: 100%;
+    width: auto;
     justify-content: center;
-    order: 3;
+    margin-left: auto;
+    order: initial;
   }
 }

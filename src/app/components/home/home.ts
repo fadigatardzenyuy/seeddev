@@ -10,6 +10,18 @@ interface ClothingCard {
   accent: string;
 }
 
+interface FeaturedCategory {
+  title: string;
+  subtitle: string;
+  description: string;
+}
+
+interface Testimonial {
+  name: string;
+  role: string;
+  quote: string;
+}
+
 @Component({
   selector: 'app-home',
   imports: [CommonModule],
@@ -49,6 +61,42 @@ export class Home {
       description: 'Large pull tabs and smooth closures designed for independence and comfort.',
       image: this.createImage('Outerwear', '#fff2d8', '#c37b12'),
       accent: '#fff2d8',
+    },
+  ];
+
+  featuredCategories: FeaturedCategory[] = [
+    {
+      title: 'Adaptive essentials',
+      subtitle: 'Everyday ease',
+      description: 'Pieces that make dressing simpler, faster, and more comfortable from morning to evening.',
+    },
+    {
+      title: 'Recovery support',
+      subtitle: 'Short-term comfort',
+      description: 'Gentle shapes and adaptable features that support healing and changing mobility needs.',
+    },
+    {
+      title: 'Daily confidence',
+      subtitle: 'Long-term independence',
+      description: 'Thoughtful details that help people feel secure, stylish, and fully themselves.',
+    },
+  ];
+
+  testimonials: Testimonial[] = [
+    {
+      name: 'Amira',
+      role: 'Post-surgery recovery',
+      quote: 'The fit felt calm and practical from day one. I barely had to think about getting dressed.',
+    },
+    {
+      name: 'Daniel',
+      role: 'Adaptive daily wear',
+      quote: 'The details are so simple but they make everything easier. It feels designed with real life in mind.',
+    },
+    {
+      name: 'Sofia',
+      role: 'Parent of a young user',
+      quote: 'I love how thoughtful the pieces are. They make confidence feel possible every single day.',
     },
   ];
 

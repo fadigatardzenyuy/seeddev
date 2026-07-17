@@ -1,25 +1,63 @@
 <div class="hero">
-  <div class="logo-container">
-    <div class="logo">
-      <span class="logo-text">L</span>
-    </div>
-    <span class="website-name">LEXON</span>
-  </div>
-
   <div class="artifact artifact-1"></div>
   <div class="artifact artifact-2"></div>
   <div class="artifact artifact-3"></div>
+  <div class="hero-backdrop">LEXON</div>
 
   <div class="hero-content">
+    <p class="hero-kicker">Adaptive fashion, reimagined for everyday life</p>
     <h1>Comfort Without Compromise</h1>
     <p>Thoughtfully designed clothing for everyone—whether you're navigating disability, pregnancy, or any condition that deserves better comfort solutions.</p>
-    <button class="cta-button">Explore Our Collection</button>
+    <div class="hero-actions">
+      <button class="cta-button">Login</button>
+      <button class="cta-button cta-button-secondary">Get Started</button>
+      <button class="cta-button cta-button-outline">Register</button>
+    </div>
   </div>
 </div>
 
+<section class="about-section">
+  <div class="about-copy">
+    <p class="eyebrow">Why LEXON exists</p>
+    <h2>Adaptive fashion for comfort, dignity, and independence</h2>
+    <p>LEXON reimagines everyday clothing for people navigating disability, recovery, pregnancy, and changing mobility needs.</p>
+  </div>
+
+  <div class="about-grid">
+    <article class="about-card">
+      <h3>Comfort first</h3>
+      <p>Soft, flexible garments designed to reduce friction and support ease of movement.</p>
+    </article>
+    <article class="about-card">
+      <h3>Made to adapt</h3>
+      <p>Thoughtful details help people dress with more confidence and less effort.</p>
+    </article>
+    <article class="about-card">
+      <h3>Designed for real life</h3>
+      <p>From recovery to daily wear, each concept supports a more inclusive routine.</p>
+    </article>
+  </div>
+</section>
+
+<section class="featured-section">
+  <div class="section-heading">
+    <p class="eyebrow">Featured collections</p>
+    <h2>Made for everyday support</h2>
+    <p>Choose the style that fits your day, from short-term recovery to long-term daily confidence.</p>
+  </div>
+
+  <div class="feature-grid">
+    <article class="feature-card" *ngFor="let feature of featuredCategories">
+      <p class="feature-subtitle">{{ feature.subtitle }}</p>
+      <h3>{{ feature.title }}</h3>
+      <p>{{ feature.description }}</p>
+    </article>
+  </div>
+</section>
+
 <section class="home-sections">
   <div class="section-heading">
-    <p class="eyebrow">Designed for real life</p>
+    <p class="eyebrow">Featured products</p>
     <h2>Clothing concepts for temporary and permanent support</h2>
     <p>Each concept is shaped around comfort, dignity, and easier dressing for different disability needs.</p>
   </div>
@@ -57,4 +95,39 @@
     <div class="result-box">{{ samplePerson.result }}</div>
   </div>
 </section>
+
+<section class="testimonials-section">
+  <div class="section-heading">
+    <p class="eyebrow">What people say</p>
+    <h2>Real comfort stories from real users</h2>
+    <p>Small design details make a big difference when clothing needs to feel effortless.</p>
+  </div>
+
+  <div class="testimonials-grid">
+    <article class="testimonial-card" *ngFor="let item of testimonials">
+      <p class="testimonial-quote">“{{ item.quote }}”</p>
+      <div class="testimonial-meta">
+        <strong>{{ item.name }}</strong>
+        <span>{{ item.role }}</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div>
+    <strong>LEXON</strong>
+    <p>Adaptive fashion designed for everyday comfort.</p>
+  </div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/products">Products</a>
+    <a href="/about">About</a>
+  </div>
+  <div class="footer-links">
+    <a href="mailto:hello@lexon.com">hello@lexon.com</a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+</footer>
 
