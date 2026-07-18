@@ -12,9 +12,9 @@ export class Navbar {
   navItems = [
     { label: 'Home', route: '/' },
     { label: 'Products', route: '/products' },
-    { label: 'What’s New', route: '/products' },
+    { label: 'Reviews', route: '/reviews' },
     { label: 'About', route: '/about' },
-    { label: 'Contact', route: '/contact' },
+    { label: 'Contact us', route: '/contact' },
   ];
 
   constructor(private router: Router) {}
