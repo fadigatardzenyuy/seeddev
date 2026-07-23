@@ -101,10 +101,10 @@ export class Home {
   ];
 
   samplePerson = {
-    name: 'Mina',
+    name: 'Franceline',
     role: 'Satisfied LEXON user',
     story:
-      'Mina uses an adaptive outfit that combines easy dressing, soft textures, and thoughtful movement support during her day.',
+      'Franceline uses an adaptive outfit that combines easy dressing, soft textures, and thoughtful movement support during her day.',
     needs: ['Easy dressing', 'Low-friction seams', 'Temperature control'],
     result: 'She can start the day with confidence and stay comfortable from morning to evening.',
   };
