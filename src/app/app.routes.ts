@@ -12,4 +12,9 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent, title: 'Contact LEXON' },
   { path: 'reviews', component: ReviewComponent, title: 'LEXON Reviews' },
   { path: '**', redirectTo: '' },
+  { path: 'cart', loadComponent: () => import('./components/cart/cart').then((m) => m.Cart) },
+  {
+    path: 'checkout',
+    loadComponent: () => import('./components/checkout/checkout').then((m) => m.Checkout),
+  },
 ];
