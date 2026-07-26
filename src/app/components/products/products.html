@@ -1,0 +1,49 @@
+<section class="section products-hero">
+  <div class="section-header center">
+    <span class="eyebrow">What we offer</span>
+    <h2>Our Products</h2>
+    <p class="section-sub">Work with our products to streamline your operations.</p>
+  </div>
+
+  <div class="category-filter">
+    <button
+      *ngFor="let cat of categories"
+      class="filter-chip"
+      [class.active]="selectedCategory() === cat"
+      (click)="setCategory(cat)">
+      {{ cat }}
+    </button>
+  </div>
+
+  <div class="products-grid">
+    <div class="hw-card" *ngFor="let product of filteredProducts()">
+      <div class="hw-icon"></div>
+      <div class="hw-info">
+        <span class="category-tag">{{ product.category }}</span>
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <a href="#">Learn more →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="comparison-section" *ngIf="products.length > 0">
+    <h3>Compare Products</h3>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Category</th>
+          <th>What it does</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td class="product-name-cell">{{ product.name }}</td>
+          <td><span class="category-tag">{{ product.category }}</span></td>
+          <td>{{ product.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

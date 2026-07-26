@@ -17,11 +17,11 @@ export class HomeComponent {
   }
 
   hardware = [
-    { icon: '', name: 'Square Register', desc: 'Your side runs the business. Their side checks out fast.', price: '899XAF' },
-    { icon: '', name: 'Square Handheld', desc: 'The POS that moves with you anywhere in your space.', price: '399XAF' },
-    { icon: '', name: 'Square Terminal', desc: 'The all-in-one credit card machine with receipt printing.', price: '299XAF' },
-    { icon: '', name: 'Square Stand', desc: 'The intuitive, swiveling iPad point of sale.', price: '149XAF' },
-    { icon: '', name: 'Square Reader', desc: 'The portable reader for every tap, dip, and swipe.', price: '59XAF' },
+    { icon: '', name: 'Square Register', desc: 'Your side runs the business. Their side checks out fast.', price: 'XAF899' },
+    { icon: '', name: 'Square Handheld', desc: 'The POS that moves with you anywhere in your space.', price: 'XAF399' },
+    { icon: '', name: 'Square Terminal', desc: 'The all-in-one credit card machine with receipt printing.', price: 'XAF299' },
+    { icon: '', name: 'Square Stand', desc: 'The intuitive, swiveling iPad point of sale.', price: 'XAF149' },
+    { icon: '', name: 'Square Reader', desc: 'The portable reader for every tap, dip, and swipe.', price: 'XAF59' },
   ];
 
   features = [

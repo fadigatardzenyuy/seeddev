@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/homeComponent/homeComponent';
-import { ProductsComponent } from './components/pricing/products/products';
+import { ProductsComponent } from './components/products/products';
 import { Pricing } from './components/pricing/pricing';
 import { WhatsNew } from './components/whats-new/whats-new';
 import { Contact } from './components/contact/contact';
