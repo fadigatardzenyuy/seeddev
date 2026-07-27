@@ -1,15 +1,15 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/homeComponent/homeComponent';
-import { ProductsComponent } from './components/products/products';
 import { Pricing } from './components/pricing/pricing';
-import { WhatsNew } from './components/whats-new/whats-new';
 import { Contact } from './components/contact/contact';
+import { ProductsComponent } from './components/products/products';
+import { WhatsNew } from './components/whats-new/whats-new';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'products', component: ProductsComponent },
-  { path: 'pricing', component: Pricing },
-  { path: 'whats-new', component: WhatsNew },
-  { path: 'contact-us', component: Contact },
-  
+  { path: '', component: HomeComponent, title: 'SÄÑGÖ Home' },
+  { path: 'pricing', component: Pricing, title: 'SÄÑGÖ Pricing' },
+  { path: 'products', component: ProductsComponent, title: 'SÄÑGÖ Products' },
+  { path: 'whats-new', component: WhatsNew, title: "SÄÑGÖ What's New" },
+  { path: 'contact', component: Contact, title: 'SÄÑGÖ Contact Us' },
+  { path: '**', redirectTo: '' },
 ];
