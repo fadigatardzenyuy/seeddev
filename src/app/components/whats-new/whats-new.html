@@ -1,0 +1,21 @@
+<div class="section-header center">
+  <span class="eyebrow">What's New</span>
+  <h2>Latest Updates</h2>
+  <p class="section-sub">Stay informed about the latest features and improvements.</p>
+</div>
+<div class="whats-new-grid">
+  <div class="hw-card" *ngFor="let update of updates">
+    <div class="hw-icon"></div>
+    <div class="hw-info">
+      <h3>{{ update.title }}</h3>
+      <p>{{ update.description }}</p>
+      <a href="#">Read more →</a>
+    </div>
+  </div>
+</div>
+<div class="input-field center">
+  <input type="text" placeholder="Enter your suggestions here..." [(ngModel)]="suggestion">
+</div>
+<div class="section-footer center">
+  <a href="#" class="btn btn-primary">View All Updates</a>
+  </div>

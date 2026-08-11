@@ -1,0 +1,235 @@
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">Run every part of your business</p>
+    <h1>Local legend or global icon.<br />Make it big on your block.</h1>
+    <p class="hero-sub">Sell anywhere. Diversify revenue streams. Streamline operations. Manage your staff. Get paid faster.</p>
+    <div class="hero-btns">
+      <button class="btn-solid btn-lg">Get started free</button>
+      <button class="btn-outline btn-lg">Contact sales</button>
+    </div>
+    <p class="hero-note">No contracts. No hidden fees.</p>
+  </div>
+  <div class="hero-visual">
+    <div class="dashboard-card">
+      <div class="dash-header">
+        <span class="dash-label">Today's sales</span>
+        <span class="dash-amount">XAF4c,820.50</span>
+      </div>
+      <div class="dash-bars">
+        <div class="bar" style="height:40%"></div>
+        <div class="bar" style="height:65%"></div>
+        <div class="bar" style="height:50%"></div>
+        <div class="bar" style="height:80%"></div>
+        <div class="bar" style="height:55%"></div>
+        <div class="bar" style="height:90%"></div>
+        <div class="bar active" style="height:75%"></div>
+      </div>
+      <div class="dash-days">
+        <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+      </div>
+      <div class="dash-stats">
+        <div class="dash-stat">
+          <span class="ds-val">243</span>
+          <span class="ds-key">Transactions</span>
+        </div>
+        <div class="dash-stat">
+          <span class="ds-val">XAF19.83</span>
+          <span class="ds-key">Avg. ticket</span>
+        </div>
+        <div class="dash-stat">
+          <span class="ds-val">+12%</span>
+          <span class="ds-key">vs last week</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRY STRIP -->
+<div class="industry-strip">
+  <span>Restaurants</span>
+  <span class="dot">&#8226;</span>
+  <span>Retail</span>
+  <span class="dot">&#8226;</span>
+  <span>Beauty salons</span>
+  <span class="dot">&#8226;</span>
+  <span>Barbershops</span>
+  <span class="dot">&#8226;</span>
+  <span>Fitness</span>
+  <span class="dot">&#8226;</span>
+  <span>Professional services</span>
+</div>
+
+<!-- HARDWARE -->
+<section class="section hardware-section">
+  <div class="section-header">
+    <span class="eyebrow">Hardware</span>
+    <h2>Smooth checkout, every time</h2>
+    <p class="section-sub">Purpose-built hardware that connects to your Square software seamlessly.</p>
+  </div>
+  <div class="hardware-grid">
+    <div class="hw-card" *ngFor="let hw of hardware">
+      <div class="hw-icon">{{ hw.icon }}</div>
+      <div class="hw-info">
+        <h3>{{ hw.name }}</h3>
+        <p>{{ hw.desc }}</p>
+        <span class="hw-price">{{ hw.price }}</span>
+        <a href="#">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES / POS -->
+<section class="section features-section">
+  <div class="section-header">
+    <span class="eyebrow">Point of sale</span>
+    <h2>See your whole business click into place</h2>
+  </div>
+  <div class="features-grid">
+    <div class="feat-card" *ngFor="let f of features">
+      <div class="feat-icon">{{ f.icon }}</div>
+      <h3>{{ f.title }}</h3>
+      <p>{{ f.desc }}</p>
+      <a href="#">Learn more →</a>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES STATS -->
+<section class="section stats-section">
+  <div class="section-header">
+    <span class="eyebrow">Built for every industry</span>
+    <h2>Keep your business growing</h2>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card" *ngFor="let s of stats">
+      <span class="stat-industry">{{ s.industry }}</span>
+      <div class="stat-number">{{ s.number }}</div>
+      <p class="stat-desc">{{ s.desc }}</p>
+      <a href="#">Learn more →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SQUARE AI -->
+<section class="ai-section">
+  <div class="ai-text">
+    <span class="eyebrow"> SÄÑGÖ AI</span>
+    <h2>Make smart decisions, fast</h2>
+    <p>Ask SANGO AI anything about your business and get immediate insights — no spreadsheets needed.</p>
+    <ul class="ai-bullets">
+      <li>&#10003; Sales trends and forecasts</li>
+      <li>&#10003; Inventory alerts</li>
+      <li>&#10003; Staff performance</li>
+      <li>&#10003; Customer insights</li>
+    </ul>
+    <button class="btn-solid">Try SÄÑGÖ AI</button>
+  </div>
+  <div class="ai-chat">
+    <div class="chat-window">
+      <div class="chat-header">
+        <span class="chat-dot green"></span>
+        <span class="chat-title">SÄÑGÖ AI</span>
+      </div>
+      <div class="chat-body">
+        <div class="bubble user">What were my top selling items last week?</div>
+        <div class="bubble ai">Your top 3 items: Latte ($1,240), Croissant ($890), Cold Brew ($740). Latte sales are up 12% from the previous week. 📈</div>
+        <div class="bubble user">How can I increase cold brew sales?</div>
+        <div class="bubble ai">Try a happy hour promotion between 2–4pm — that's when cold brew demand typically peaks. You could also bundle it with a pastry for a discount.</div>
+      </div>
+      <div class="chat-input-row">
+        <input type="text" placeholder="Ask anything about your business..." />
+        <button>&#10148;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials-section">
+  <div class="section-header">
+    <span class="eyebrow">Stories</span>
+    <h2>Businesses that run on SÄÑGÖ</h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card" *ngFor="let t of testimonials">
+      <p class="quote">"{{ t.quote }}"</p>
+      <div class="t-author">
+        <div class="t-avatar">{{ t.initials }}</div>
+        <div>
+          <strong>{{ t.name }}</strong>
+          <span>{{ t.business }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section pricing-section">
+  <div class="section-header center">
+    <span class="eyebrow">Pricing</span>
+    <h2>One plan for your whole business</h2>
+    <p class="section-sub">No contracts. No hidden fees. Cancel anytime.</p>
+  </div>
+  <div class="pricing-grid">
+    <div class="plan-card" *ngFor="let p of plans" [class.featured]="p.featured">
+      <div class="plan-badge" *ngIf="p.featured">Best value</div>
+      <h3>{{ p.name }}</h3>
+      <div class="plan-price">{{ p.price }}</div>
+      <div class="plan-period">{{ p.period }}</div>
+      <ul class="plan-features">
+        <li *ngFor="let f of p.features">&#10003; {{ f }}</li>
+      </ul>
+      <button [class]="p.featured ? 'btn-solid full' : 'btn-outline full'">{{ p.cta }}</button>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+  <div class="nl-text">
+    <h3>Stay up to date with SÄÑGÖ</h3>
+    <p>News, product releases and tips for your business.</p>
+  </div>
+  <div class="nl-form">
+    <input type="email" placeholder="Enter your email address" />
+    <button class="btn-solid">Subscribe</button>
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">&#9632; SÄÑGÖ</div>
+      <p>Power your entire business with one platform.</p>
+      <div class="footer-socials">
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-links" *ngFor="let col of footerCols">
+      <h4>{{ col.title }}</h4>
+      <ul>
+        <li *ngFor="let link of col.links"><a href="#">{{ link }}</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Block, Inc. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy notice</a>
+      <a href="#">Security</a>
+      <a href="#">Terms of service</a>
+      <a href="#">Accessibility</a>
+    </div>
+  </div>
+</footer>

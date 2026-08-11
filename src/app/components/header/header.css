@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  background: #ffffff;
+  width: 100%;
+}
+
+
+
+
+p {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 14px;
+}
+
+

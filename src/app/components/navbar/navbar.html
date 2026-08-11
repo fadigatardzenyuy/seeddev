@@ -1,0 +1,22 @@
+<nav class="navbar">
+  <a routerLink="/" class="nav-logo">SÄÑGÖ</a>
+
+  <ul class="nav-links">
+    <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+    <li><a routerLink="/pricing" routerLinkActive="active">Pricing</a></li>
+    <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
+    <li><a routerLink="/whats-new" routerLinkActive="active">What's New</a></li>
+    <li><a routerLink="/contact-us" routerLinkActive="active">Contact Us</a></li>
+    <button class="btn-outline">Sign in</button>
+    <button class="btn-solid">Get started</button>
+    </ul>
+  <div class="hamburger" (click)="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<ul class="mobile-menu" [class.open]="menuOpen">
+  <li><a routerLink="/">Home</a></li>
+  <li><a routerLink="/pricing">Pricing</a></li>
+  <li><a routerLink="/products">Products</a></li>
+</ul>
