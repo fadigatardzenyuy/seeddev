@@ -1,0 +1,30 @@
+{
+    "profile 1": {
+        "name": "Elumba",
+        "height": "6,7",
+        "age": 18,
+        "occupation": "student",
+        "hobbies": ["Watching football", "Playing video games"]
+    },
+    "profile 2": {
+        "name": "Fadiga",
+        "height": "5,9",
+        "age": 24,
+        "occupation": "software engineer",
+        "hobbies": ["Coding", "Reading tech blogs", "Playing eFootball"]
+    },
+    "profile 3": {
+        "name": "Tardzenyuy",
+        "height": "6,1",
+        "age": 21,
+        "occupation": "student",
+        "hobbies": ["Football", "Music production", "Gaming"]
+    },
+    "profile 4": {
+        "name": "Amina",
+        "height": "5,5",
+        "age": 22,
+        "occupation": "graphic designer",
+        "hobbies": ["Drawing", "Photography", "Traveling"]
+    }
+}

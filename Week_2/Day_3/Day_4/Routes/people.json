@@ -1,0 +1,85 @@
+
+{
+    "people": [
+        {
+            "id": 1,
+            "name": "Elumba",
+            "height": "6.7",
+            "age": 18,
+            "occupation": "student",
+            "hobbies": ["Football", "Playing video games"]
+        },
+        {
+            "id": 2,
+            "name": "Fadiga",
+            "height": "5.9",
+            "age": 24,
+            "occupation": "software engineer",
+            "hobbies": ["Coding", "Reading tech blogs", "Playing eFootball"]
+        },
+        {
+            "id": 3,
+            "name": "Tardzenyuy",
+            "height": "6.1",
+            "age": 21,
+            "occupation": "student",
+            "hobbies": ["Football", "Music production", "Gaming"]
+        },
+        {
+            "id": 4,
+            "name": "Amina",
+            "height": "5.5",
+            "age": 22,
+            "occupation": "graphic designer",
+            "hobbies": ["Drawing", "Photography", "Traveling"]
+        },
+        {
+            "id": 5,
+            "name": "Kwame",
+            "height": "6.0",
+            "age": 25,
+            "occupation": "teacher",
+            "hobbies": ["Reading", "Hiking", "Cooking"]
+        },
+        {
+            "id": 6,
+            "name": "Nia",
+            "height": "5.8",
+            "age": 20,
+            "occupation": "student",
+            "hobbies": ["Dancing", "Singing", "Volunteering"]
+        },
+        {
+            "id": 7,
+            "name": "Jamal",
+            "height": "6.2",
+            "age": 23,
+            "occupation": "athlete",
+            "hobbies": ["Running", "Swimming", "Cycling"]
+        },
+        {
+            "id": 8,
+            "name": "Lila",
+            "height": "5.6",
+            "age": 22,
+            "occupation": "doctor",
+            "hobbies"   : ["Reading", "Yoga", "Meditation"]
+        },
+        {
+            "id": 9,
+            "name": "Omar",
+            "height": "6.3",
+            "age": 24,
+            "occupation": "engineer",
+            "hobbies": ["Coding", "Gaming", "Traveling"]
+        },
+        {
+            "id": 10,
+            "name": "Sofia",
+            "height": "5.7",
+            "age": 21,
+            "occupation": "artist",
+            "hobbies": ["Painting", "Sculpting", "Photography"]
+        }
+    ]
+}
