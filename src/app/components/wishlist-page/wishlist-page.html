@@ -1,0 +1,17 @@
+<div class="wishlist-page">
+  <h1>My Wishlist ({{ wishlist.count() }})</h1>
+
+  <div *ngIf="wishlist.count() === 0" class="empty-state">
+    Your wishlist is empty.
+  </div>
+
+  <div class="wishlist-grid">
+    <div class="wishlist-item" *ngFor="let item of wishlist.items()">
+      <img [src]="item.image" [alt]="item.name" />
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.category }}</p>
+      <p class="price">{{ item.price | currency }}</p>
+      <button (click)="wishlist.remove(item.id)">Remove</button>
+    </div>
+  </div>
+</div>

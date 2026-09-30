@@ -1,0 +1,40 @@
+<!-- src/app/components/checkout/checkout.html -->
+<div class="checkout-page">
+  @if (!orderPlaced) {
+    <h2>Checkout</h2>
+    <form (ngSubmit)="placeOrder()">
+      <label>Full Name</label>
+      <input type="text" [(ngModel)]="form.fullName" name="fullName" required />
+
+      <label>Address</label>
+      <input type="text" [(ngModel)]="form.address" name="address" required />
+
+      <label>City</label>
+      <input type="text" [(ngModel)]="form.city" name="city" required />
+
+      <label>Card Number</label>
+      <input type="text" [(ngModel)]="form.cardNumber" name="cardNumber" required placeholder="4242 4242 4242 4242" />
+
+      <div class="row">
+        <div>
+          <label>Expiry</label>
+          <input type="text" [(ngModel)]="form.expiry" name="expiry" placeholder="MM/YY" required />
+        </div>
+        <div>
+          <label>CVV</label>
+          <input type="text" [(ngModel)]="form.cvv" name="cvv" required />
+        </div>
+      </div>
+
+      <p class="order-total">Order Total: ${{ cartService.totalPrice().toFixed(2) }}</p>
+
+      <button type="submit" class="place-order-btn">Place Order</button>
+    </form>
+  } @else {
+    <div class="confirmation">
+      <h2>🎉 Order Confirmed!</h2>
+      <p>Thanks, {{ form.fullName }} — your order is on its way.</p>
+      <p class="note">(This is a mock checkout — no real payment was processed.)</p>
+    </div>
+  }
+</div>

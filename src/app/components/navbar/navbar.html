@@ -1,0 +1,43 @@
+<nav class="top-nav">
+  <a class="brand" routerLink="/">
+    <span class="brand-mark">L</span>
+    <span>LEXON</span>
+  </a>
+
+  <!-- Desktop Navigation Links -->
+  <div class="nav-links">
+    <a
+      *ngFor="let item of navItems"
+      [routerLink]="item.route"
+      [class.active]="isLinkActive(item.route, item.label)"
+    >
+      {{ item.label }}
+    </a>
+  </div>
+
+  <!-- Hamburger Menu Button -->
+  <button 
+    class="hamburger" 
+    [class.open]="menuOpen()"
+    (click)="toggleMenu()"
+    aria-label="Toggle navigation menu"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" [class.open]="menuOpen()">
+    <a
+      *ngFor="let item of navItems"
+      [routerLink]="item.route"
+      [class.active]="isLinkActive(item.route, item.label)"
+      (click)="closeMenu()"
+      class="mobile-link"
+    >
+      {{ item.label }}
+    </a>
+  </div>
+</nav>
+

@@ -1,0 +1,33 @@
+<!-- src/app/components/cart/cart.html -->
+<div class="cart-page">
+  <h2>Your Cart</h2>
+
+  @if (cartService.cartItems().length === 0) {
+    <p>Your cart is empty.</p>
+    <a routerLink="/products">Continue Shopping</a>
+  } @else {
+    @for (item of cartService.cartItems(); track item.product.id) {
+      <div class="cart-item">
+        <img [src]="item.product.imageUrl" [alt]="item.product.name" />
+        <div class="cart-item-details">
+          <h4>{{ item.product.name }}</h4>
+          <p>${{ item.product.price.toFixed(2) }}</p>
+
+          <div class="quantity-controls">
+            <button (click)="decrement(item.product.id, item.quantity)">−</button>
+            <span>{{ item.quantity }}</span>
+            <button (click)="increment(item.product.id, item.quantity)">+</button>
+          </div>
+
+          <button class="remove-btn" (click)="remove(item.product.id)">Remove</button>
+        </div>
+      </div>
+    }
+
+    <div class="cart-summary">
+      <p>Total items: {{ cartService.totalItems() }}</p>
+      <p class="total">Total: ${{ cartService.totalPrice().toFixed(2) }}</p>
+      <a routerLink="/checkout" class="checkout-btn">Proceed to Checkout</a>
+    </div>
+  }
+</div>
